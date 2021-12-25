@@ -1,0 +1,113 @@
+{
+	// "condition": { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [{
+	// 		"name": "test", //模式名称
+	// 		"path": "pages/componentsA/test/test", //启动页面，必选
+	// 		"query": "" //启动参数，在页面的onLoad函数里面得到
+	// 	}]
+	// },
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pageshttps://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "by首页"
+			}
+		},
+		{
+			"path": "pages/course_select/index",
+			"style": {
+				"navigationBarTitleText": "选课"
+			}
+		},
+		{
+			"path": "pages/formula/index",
+			"style": {
+				"navigationBarTitleText": "论坛"
+			}
+		},
+		{
+			"path": "pages/else_page/index",
+			"style": {
+				"navigationBarTitleText": "其他"
+			}
+		},
+		{
+			"path": "pages/center/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pages/subpages",
+			"pages": [{
+				"path": "sub_calendar/index",
+				"style": {
+					"navigationBarTitleText": "校历"
+				}
+			},
+			{
+				"path": "sub_parse_table/index",
+				"style": {
+					"navigationBarTitleText": "课程表"
+				}
+			},
+			{
+				"path": "sub_parse_table/jump",
+				"style": {
+					"navigationBarTitleText": "内部链接"
+				}
+			},
+		    {
+				"path": "sub_form/form",
+				"style": {
+					"navigationBarTitleText": "表单"
+				}
+			}]
+			}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "BeYourself",
+		"navigationBarBackgroundColor":"#abbcd9",
+		"backgroundColor": "#abbcd9"
+	},
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#3cc51f",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [
+		{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/uview/example/component.png",
+	        "selectedIconPath": "static/uview/example/component_select.png",
+	        "text": "首页"
+	    }, 
+		{
+		    "pagePath": "pages/course_select/index",
+		    "iconPath": "static/uview/example/component.png",
+		    "selectedIconPath": "static/uview/example/component_select.png",
+		    "text": "选课"
+		},
+		{
+		    "pagePath": "pages/formula/index",
+		    "iconPath": "static/uview/example/component.png",
+		    "selectedIconPath": "static/uview/example/component_select.png",
+		    "text": "论坛"
+		},
+		{
+		    "pagePath": "pages/else_page/index",
+		    "iconPath": "static/uview/example/component.png",
+		    "selectedIconPath": "static/uview/example/component_select.png",
+		    "text": "其他"
+		},
+		{
+	        "pagePath": "pages/center/index",
+	        "iconPath": "static/uview/example/template.png",
+	        "selectedIconPath": "static/uview/example/template_select.png",
+	        "text": "我的"
+	    }]
+	}
+}
